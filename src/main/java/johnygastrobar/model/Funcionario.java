@@ -1,4 +1,4 @@
-package johnygastrobar;
+package johnygastrobar.model;
 
 public class Funcionario {
     private int id;
@@ -27,4 +27,9 @@ public class Funcionario {
     public void setNome(String nome) { this.nome = nome; }
     public void setCpf(String cpf) { this.cpf = cpf; }
     public void setSalario(double salario) { this.salario = salario; }
+
+    @Override
+    public String toString() {
+        return "Funcionario [ID=" + id + ", Nome=" + nome + ", CPF=" + cpf + ", Salario=" + String.format("%.2f", salario) + "]";
+    }
 }

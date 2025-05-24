@@ -1,4 +1,4 @@
-package johnygastrobar;
+package johnygastrobar.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
